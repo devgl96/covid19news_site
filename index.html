@@ -165,9 +165,11 @@
         <h3>Sobre</h3>
         <img src="img/img_posts/about.jpg" alt="" />
         <p>
-          Hey, Meu Nome é George Lucas. Eu sou estudante de Ciência da
-          Computação e gosto muito da área de Desenvolvimento Web e Mobile
-          através das tecnologias React e React Native.
+          <i
+            >Hey, Meu Nome é George Lucas. Eu sou estudante de Ciência da
+            Computação e gosto muito da área de Desenvolvimento Web e Mobile
+            através das tecnologias React e React Native.</i
+          >
         </p>
       </div>
 
@@ -176,13 +178,22 @@
       <div id="contact">
         <h3>Contato</h3>
         <form action="#">
-          <label for="Nome">Nome Completo</label>
-          <input type="text" placeholder="Nome Completo" />
-          <label for="Email">Email</label>
-          <input type="email" placeholder="Digite o seu melhor email" />
-          <label for="Mensagem">Mensagem</label>
-          <textarea placeholder="Digite a sua mensagem"></textarea>
-          <button>Enviar</button>
+        <ul class="form-style">
+            <li>
+                <label for="Nome">Nome Completo</label>
+                <input type="text" placeholder="Nome Completo" />
+            </li>
+            <li>
+                <label for="Email">Email</label>
+                <input type="email" placeholder="Digite o seu melhor email" />
+            </li>
+            <li>
+                <label for="Mensagem">Mensagem</label>
+                <textarea placeholder="Digite a sua mensagem"></textarea>
+            </li>
+            <li>
+                <button>Enviar</button>
+            </li>
         </form>
         <div id="socialMedias">
           <a href="#"
@@ -190,6 +201,7 @@
           /></a>
           <a href="#"><img src="img/icons/github_icon.png" alt="Github" /></a>
         </div>
+    </ul>
       </div>
 
       <!-- Fonts -->
