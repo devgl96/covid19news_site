@@ -20,7 +20,7 @@
       href="img/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
     <title>Covid-19 News - Portal de Notícias</title>
   </head>
   <body>
@@ -36,7 +36,7 @@
             <li><a href="#latestNews">Home</a></li>
             <li><a href="#aboutMe">Sobre</a></li>
             <li><a href="#contact">Contato</a></li>
-            <li><a href="#fonts">Saiba Mais</a></li>
+            <li><a href="#fontsSection">Saiba Mais</a></li>
           </ul>
         </div>
       </div>
@@ -53,6 +53,18 @@
         </div>
       </div>
 
+      <!-- Show the information about the Covid-19 -->
+      <table id="currentInformation" class="tableInfoCovid">
+        <tr>
+          <th>Estado</th>
+          <th>Casos</th>
+          <th>Mortes</th>
+          <th>Suspeitas</th>
+        </tr>
+      </table>
+
+      <hr />
+
       <!-- All Latest News -->
       <div id="latestNews">
         <div id="header">
@@ -61,101 +73,23 @@
         </div>
 
         <!-- News -->
-        <div class="newsLeft">
-          <img src="img/img_posts/post_01.jpg" alt="Câmera" />
-          <h4>Câmeras Termográficas podem apoiar o combate à Covid-19</h4>
-          <p>
-            A termografia por infravermelho é usada no mundo há mais de 60 anos
-            para projetos de construção, atividades industriais e civis, mas
-            hoje as novas tecnologias tornaram as câmeras termográficas mais
-            intuitivas, ergonômicas, com melhor qualidade de imagem e análises
-            mais precisas. Por esse motivo, em fábricas, empresas e locais de
-            alta circulação de pessoas, as câmeras permitem a identificação de
-            pessoas com alta temperatura corporal (com margem de erro de 0,5
-            graus), auxiliando na triagem e separação dela para evitar possível
-            contágio até que sejam feitos diagnósticos complementares para
-            confirmar os sintomas do vírus.
-          </p>
-        </div>
-        <div class="newsRight">
-          <img src="img/img_posts/post_02.jpg" alt="Drone na mesa" />
-          <h4>Drones no combate à Covid-19</h4>
-          <p>
-            O drone tem um alto-falante que emite mensagens orientando o grupo a
-            se dispersar. O aparelho já está em ação em algumas feiras livres do
-            Recife, com apoio de agentes da Defesa Civil. O mesmo sistema já foi
-            usado no enfrentamento a uma epidemia de cólera no Malawi, na
-            África, em 2019. “Não é uma experimentação de primeira viagem”,
-            destacou o cientista da computação Jones Oliveira de Albuquerque, do
-            Laboratório de Imunopatologia Keizo Asami (Lika) da UFPE.
-          </p>
-        </div>
-        <div class="newsLeft">
-          <img
-            src="img/img_posts/post_03.jpg"
-            alt="Remédios formando o nome Covid-19"
-          />
-          <h4>
-            Pacientes com Covid-19 respondem a medicamento antiviral remdesivir
-            da Gilead
-          </h4>
-          <p>
-            Um hospital da Universidade de Chicago, que participa de um estudo
-            sobre o medicamento antiviral, disse que está observando recuperação
-            rápida em febre e sintomas respiratórios, com quase todos os
-            pacientes recebendo alta em menos de uma semana, segundo o site de
-            notícias médicas “STAT”.
-          </p>
-        </div>
-        <div class="newsRight">
-          <iframe
-            src="https://www.youtube.com/embed/1LSGx_ShpVk"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <h4>Guia de Prevenção sobre o Coronavírus</h4>
-          <p>
-            Principal recomendação é higienizar as mãos. São cuidados simples,
-            mas importantes e que devem ser frequentes para prevenir doenças
-            contagiosas.
-          </p>
-        </div>
-        <div class="newsLeft">
-          <img src="img/img_posts/post_05.jpg" alt="" />
-          <h4>
-            Portal CoronaBr ganha estabilidade com nuvem pública da IBM para
-            ajudar os brasileiros
-          </h4>
-          <p>
-            O enfermeiro virtual “Pedro do CoronaBr”, a partir de roteiros de
-            diagnóstico clínicos (teleorientação em casos de sintomas
-            autolimitados), faz perguntas e usa sinais de alerta a partir dos
-            sintomas indicados. Isso permite realizar uma triagem de pacientes
-            para qualificar aqueles que precisam de atendimento médico ou
-            indicar os casos nos quais a recomendação não seja medicamentosa,
-            passando orientações para aqueles com sintomas que poderiam ficar em
-            casa. O site é totalmente gratuito e faz as primeiras perguntas que
-            um enfermeiro faria em uma triagem no hospital, com base no
-            protocolo seguido pela Organização Mundial da Saúde e pelo
-            Ministério da Saúde.
-          </p>
-        </div>
-        <div class="newsRight">
-          <img src="img/img_posts/post_06.jpg" alt="Covid-19 Virus" />
-          <h4>
-            Novo coronavírus foi fabricado acidentalmente em laboratório chinês,
-            diz descobridor do HIV
-          </h4>
-          <p>
-            O cientista francês diz que “o laboratório de alta segurança da
-            cidade de Wuhan é especializada nesse tipo de vírus, o coronavírus,
-            desde o começo dos anos 2000. Eles têm expertise com isso. Isso me
-            fez olhar de perto a sequência de RNA do vírus. Fiz essa análise,
-            assim como o matemático Jean-Claude Perez, especialista em
-            biomatemática”.
-          </p>
-        </div>
+        <div class="allNews">
+          <!-- <div class="infoNews">
+            <img src="img/img_posts/post_01.jpg" alt="Câmera" />
+            <h4>Câmeras Termográficas podem apoiar o combate à Covid-19</h4>
+            <p>
+              A termografia por infravermelho é usada no mundo há mais de 60 anos
+              para projetos de construção, atividades industriais e civis, mas
+              hoje as novas tecnologias tornaram as câmeras termográficas mais
+              intuitivas, ergonômicas, com melhor qualidade de imagem e análises
+              mais precisas. Por esse motivo, em fábricas, empresas e locais de
+              alta circulação de pessoas, as câmeras permitem a identificação de
+              pessoas com alta temperatura corporal (com margem de erro de 0,5
+              graus), auxiliando na triagem e separação dela para evitar possível
+              contágio até que sejam feitos diagnósticos complementares para
+              confirmar os sintomas do vírus.
+            </p>
+          </div> -->
       </div>
 
       <!-- About Me -->
@@ -268,5 +202,6 @@
         <h4>&copy; George Lucas Dev</h4>
       </div>
     </div>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
