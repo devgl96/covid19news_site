@@ -70,6 +70,7 @@ body {
   min-height: 380px;
   position: relative;
   box-shadow: #333 2px 2px 5px;
+  filter: brightness(0.5);
 }
 
 #mainImage #textImage {

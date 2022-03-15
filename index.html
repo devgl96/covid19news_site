@@ -1,95 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="styles.css" type="text/css"/>
-    <title>Covid-19 News - Portal de Notícias</title>
-  </head>
-  <body>
-    <!-- Full Page -->
-    <div id="fullPage">
-      <!-- Navigation Menu -->
-      <div id="navigationMenu">
-        <div id="navigationMenuImg">
-          <img src="img/covid19News.png" alt="Nome do Site Covid-19 News" />
-        </div>
-        <div id="menuItems">
-          <ul>
-            <li><a href="#latestNews">Home</a></li>
-            <li><a href="#aboutMe">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
-            <li><a href="#fontsSection">Saiba Mais</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- Main Image/GIF -->
-      <div id="mainImage">
-        <!--<video width="100%" height="700px" autoplay>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <title>Covid-19 News - Portal de Notícias</title>
+</head>
+
+<body>
+  <!-- Full Page -->
+  <div id="fullPage">
+    <!-- Navigation Menu -->
+    <div id="navigationMenu">
+      <div id="navigationMenuImg">
+        <img src="img/covid19News.png" alt="Nome do Site Covid-19 News" />
+      </div>
+      <div id="menuItems">
+        <ul>
+          <li><a href="#latestNews">Home</a></li>
+          <li><a href="#aboutMe">Sobre</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><a href="#fontsSection">Saiba Mais</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Image/GIF -->
+    <div id="mainImage">
+      <!--<video width="100%" height="700px" autoplay>
           <source src="img/mainVideo2.mp4" type="video/mp4" />
         </video>-->
-        <img src="img/mainPhoto.jpg" alt="Covid-19 Virus" />
-        <div id="textImage">
-          <h2>Tudo o que precisa saber sobre Covid-19</h2>
-          <p>Últimas Notícias do Covid-19</p>
-        </div>
+      <img
+        src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_11/3265846/200310-coronavirus-2x1-al-1310.gif"
+        alt="Covid-19 Virus" />
+      <div id="textImage">
+        <h2>Tudo o que precisa saber sobre Covid-19</h2>
+        <p>Últimas Notícias do Covid-19</p>
+      </div>
+    </div>
+
+    <!-- Show the information about the Covid-19 -->
+    <table id="currentInformation" class="tableInfoCovid">
+      <tr>
+        <th>Estado</th>
+        <th>Casos</th>
+        <th>Mortes</th>
+        <th>Suspeitas</th>
+      </tr>
+    </table>
+
+    <hr />
+
+    <!-- All Latest News -->
+    <div id="latestNews">
+      <div id="header">
+        <h2>Últimas Notícias</h2>
+        <p>Notícias Recentes sobre o COVID-19</p>
       </div>
 
-      <!-- Show the information about the Covid-19 -->
-      <table id="currentInformation" class="tableInfoCovid">
-        <tr>
-          <th>Estado</th>
-          <th>Casos</th>
-          <th>Mortes</th>
-          <th>Suspeitas</th>
-        </tr>
-      </table>
-
-      <hr />
-
-      <!-- All Latest News -->
-      <div id="latestNews">
-        <div id="header">
-          <h2>Últimas Notícias</h2>
-          <p>Notícias Recentes sobre o COVID-19</p>
-        </div>
-
-        <!-- News -->
-        <div class="allNews">
-          <!-- <div class="infoNews">
-            <img src="img/img_posts/post_01.jpg" alt="Câmera" />
-            <h4>Câmeras Termográficas podem apoiar o combate à Covid-19</h4>
-            <p>
-              A termografia por infravermelho é usada no mundo há mais de 60 anos
-              para projetos de construção, atividades industriais e civis, mas
-              hoje as novas tecnologias tornaram as câmeras termográficas mais
-              intuitivas, ergonômicas, com melhor qualidade de imagem e análises
-              mais precisas. Por esse motivo, em fábricas, empresas e locais de
-              alta circulação de pessoas, as câmeras permitem a identificação de
-              pessoas com alta temperatura corporal (com margem de erro de 0,5
-              graus), auxiliando na triagem e separação dela para evitar possível
-              contágio até que sejam feitos diagnósticos complementares para
-              confirmar os sintomas do vírus.
-            </p>
-          </div> -->
+      <!-- News -->
+      <div class="allNews">
       </div>
 
       <!-- About Me -->
@@ -99,11 +73,9 @@
         <h3>Sobre</h3>
         <img src="img/img_posts/about.jpg" alt="" />
         <p>
-          <i
-            >Hey, Meu Nome é George Lucas. Eu sou estudante de Ciência da
+          <i>Hey, Meu Nome é George Lucas. Eu sou estudante de Ciência da
             Computação e gosto muito da área de Desenvolvimento Web e Mobile
-            através das tecnologias React e React Native.</i
-          >
+            através das tecnologias React e React Native.</i>
         </p>
       </div>
 
@@ -112,85 +84,29 @@
       <div id="contact">
         <h3>Contato</h3>
         <form action="#">
-        <ul class="form-style">
+          <ul class="form-style">
             <li>
-                <label for="Nome">Nome Completo</label>
-                <input type="text" placeholder="Nome Completo" />
+              <label for="Nome">Nome Completo</label>
+              <input type="text" placeholder="Nome Completo" />
             </li>
             <li>
-                <label for="Email">Email</label>
-                <input type="email" placeholder="Digite o seu melhor email" />
+              <label for="Email">Email</label>
+              <input type="email" placeholder="Digite o seu melhor email" />
             </li>
             <li>
-                <label for="Mensagem">Mensagem</label>
-                <textarea placeholder="Digite a sua mensagem"></textarea>
+              <label for="Mensagem">Mensagem</label>
+              <textarea placeholder="Digite a sua mensagem"></textarea>
             </li>
             <li>
-                <button>Enviar</button>
+              <button>Enviar</button>
             </li>
         </form>
         <div id="socialMedias">
-          <a href="https://www.linkedin.com/in/georgelucas-dev" target="_blank"
-            ><img src="img/icons/linkedin_icon.png" alt="Linkedin"
-          /></a>
+          <a href="https://www.linkedin.com/in/georgelucas-dev" target="_blank"><img src="img/icons/linkedin_icon.png"
+              alt="Linkedin" /></a>
           <a href="https://github.com/devgl96" target="_blank"><img src="img/icons/github_icon.png" alt="Github" /></a>
         </div>
-    </ul>
-      </div>
-
-      <!-- Fonts -->
-      <div id="fontsSection">
-        <h3>Saiba Mais</h3>
-        <div id="fonts">
-          <div class="brands">
-            <a
-              href="https://forbes.com.br/last/2020/04/pacientes-com-covid-19-respondem-a-medicamento-antiviral-remdesivir-da-gilead/"
-              target="_blank"
-              ><img src="img/logos_fonts/forbes_logo.png" alt="Forbes"
-            /></a>
-          </div>
-          <div class="brands">
-            <a
-              href="https://www.saopaulo.sp.gov.br/coronavirus/"
-              target="_blank"
-              ><img" src="img/logos_fonts/governo_SP_logo.png" alt="Governo do
-              Estado de São Paulo" /></a
-            >
-          </div>
-          <div class="brands">
-            <a
-              href="https://www.ibm.com/blogs/ibm-comunica/portal-coronabr-ganha-estabilidade-com-nuvem-publica-da-ibm-para-ajudar-os-brasileiros/"
-              target="_blank"
-              ><img src="img/logos_fonts/IBM_logo.png" alt="IBM"
-            /></a>
-          </div>
-          <div class="brands">
-            <a
-              href="https://istoe.com.br/Novo-coronavIrus-foi-fabricado-em-laboratorio-chines-diz-descobridor-do-HIV"
-              target="_blank"
-              ><img src="img/logos_fonts/istoe_logo.png" alt="IstoÉ"
-            /></a>
-          </div>
-          <div class="brands">
-            <a
-              href="https://mundogeo.com/2020/04/09/cameras-termograficas-podem-apoiar-o-combate-a-covid-19/"
-              target="_blank"
-              ><img
-                src="img/logos_fonts/mundo_geo_connect_logo.png"
-                alt="Mundo Geo"
-            /></a>
-          </div>
-          <div class="brands">
-            <a
-              href="https://revistapesquisa.fapesp.br/2020/04/16/drones-no-combate-a-covid-19/"
-              target="_blank"
-            >
-              <img
-                src="img/logos_fonts/pesquisa_fapesp_logo.png"
-                alt="Pesquisa Fapesp"
-            /></a>
-          </div>
-        </div>
+        </ul>
       </div>
 
       <!-- Footer -->
@@ -203,5 +119,6 @@
       </div>
     </div>
     <script type="text/javascript" src="main.js"></script>
-  </body>
+</body>
+
 </html>
