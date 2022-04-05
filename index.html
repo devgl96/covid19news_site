@@ -1,262 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Covid-19 News - Portal de Notícias</title>
-  </head>
-  <body>
-    <!-- Full Page -->
-    <div id="fullPage">
-      <!-- Navigation Menu -->
-      <div id="navigationMenu">
-        <div id="navigationMenuImg">
-          <img src="img/covid19News.png" alt="Nome do Site Covid-19 News" />
-        </div>
-        <div id="menuItems">
-          <ul>
-            <li><a href="#latestNews">Home</a></li>
-            <li><a href="#aboutMe">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
-            <li><a href="#fonts">Saiba Mais</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- Main Image/GIF -->
-      <div id="mainImage">
-        <!--<video width="100%" height="700px" autoplay>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="images/favicon/site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <title>Covid-19 News - Portal de Notícias</title>
+</head>
+
+<body>
+  <!-- Full Page -->
+  <div id="fullPage">
+    <!-- Navigation Menu -->
+    <div id="navigationMenu">
+      <div id="navigationMenuImg">
+        <img src="images/covid19News.png" alt="Nome do Site Covid-19 News" />
+      </div>
+      <div id="menuItems">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#latestNews">Últimas Notícias</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#preventSection">Prevenção</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Image/GIF -->
+    <div id="mainImage">
+      <!--<video width="100%" height="700px" autoplay>
           <source src="img/mainVideo2.mp4" type="video/mp4" />
         </video>-->
-        <img src="img/mainPhoto.jpg" alt="Covid-19 Virus" />
-        <div id="textImage">
-          <h2>Tudo o que precisa saber sobre Covid-19</h2>
-          <p>Últimas Notícias do Covid-19</p>
-        </div>
+      <img
+        src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_11/3265846/200310-coronavirus-2x1-al-1310.gif"
+        alt="Covid-19 Virus" />
+      <div id="textImage">
+        <h2>Tudo o que precisa saber sobre Covid-19</h2>
+        <p>Últimas Notícias do Covid-19</p>
+      </div>
+    </div>
+
+    <!-- Show the information about the Covid-19 -->
+    <table id="currentInformation" class="tableInfoCovid">
+      <tr>
+        <th>Estado</th>
+        <th>Casos</th>
+        <th>Mortes</th>
+        <th>Suspeitas</th>
+      </tr>
+    </table>
+
+    <hr />
+
+    <!-- All Latest News -->
+    <div id="latestNews">
+      <div id="header">
+        <h2>Últimas Notícias</h2>
+        <p>Notícias Recentes sobre o COVID-19</p>
       </div>
 
-      <!-- All Latest News -->
-      <div id="latestNews">
-        <div id="header">
-          <h2>Últimas Notícias</h2>
-          <p>Notícias Recentes sobre o COVID-19</p>
-        </div>
-
-        <!-- News -->
-        <div class="newsLeft">
-          <img src="img/img_posts/post_01.jpg" alt="Câmera" />
-          <h4>Câmeras Termográficas podem apoiar o combate à Covid-19</h4>
-          <p>
-            A termografia por infravermelho é usada no mundo há mais de 60 anos
-            para projetos de construção, atividades industriais e civis, mas
-            hoje as novas tecnologias tornaram as câmeras termográficas mais
-            intuitivas, ergonômicas, com melhor qualidade de imagem e análises
-            mais precisas. Por esse motivo, em fábricas, empresas e locais de
-            alta circulação de pessoas, as câmeras permitem a identificação de
-            pessoas com alta temperatura corporal (com margem de erro de 0,5
-            graus), auxiliando na triagem e separação dela para evitar possível
-            contágio até que sejam feitos diagnósticos complementares para
-            confirmar os sintomas do vírus.
-          </p>
-        </div>
-        <div class="newsRight">
-          <img src="img/img_posts/post_02.jpg" alt="Drone na mesa" />
-          <h4>Drones no combate à Covid-19</h4>
-          <p>
-            O drone tem um alto-falante que emite mensagens orientando o grupo a
-            se dispersar. O aparelho já está em ação em algumas feiras livres do
-            Recife, com apoio de agentes da Defesa Civil. O mesmo sistema já foi
-            usado no enfrentamento a uma epidemia de cólera no Malawi, na
-            África, em 2019. “Não é uma experimentação de primeira viagem”,
-            destacou o cientista da computação Jones Oliveira de Albuquerque, do
-            Laboratório de Imunopatologia Keizo Asami (Lika) da UFPE.
-          </p>
-        </div>
-        <div class="newsLeft">
-          <img
-            src="img/img_posts/post_03.jpg"
-            alt="Remédios formando o nome Covid-19"
-          />
-          <h4>
-            Pacientes com Covid-19 respondem a medicamento antiviral remdesivir
-            da Gilead
-          </h4>
-          <p>
-            Um hospital da Universidade de Chicago, que participa de um estudo
-            sobre o medicamento antiviral, disse que está observando recuperação
-            rápida em febre e sintomas respiratórios, com quase todos os
-            pacientes recebendo alta em menos de uma semana, segundo o site de
-            notícias médicas “STAT”.
-          </p>
-        </div>
-        <div class="newsRight">
-          <iframe
-            src="https://www.youtube.com/embed/1LSGx_ShpVk"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <h4>Guia de Prevenção sobre o Coronavírus</h4>
-          <p>
-            Principal recomendação é higienizar as mãos. São cuidados simples,
-            mas importantes e que devem ser frequentes para prevenir doenças
-            contagiosas.
-          </p>
-        </div>
-        <div class="newsLeft">
-          <img src="img/img_posts/post_05.jpg" alt="" />
-          <h4>
-            Portal CoronaBr ganha estabilidade com nuvem pública da IBM para
-            ajudar os brasileiros
-          </h4>
-          <p>
-            O enfermeiro virtual “Pedro do CoronaBr”, a partir de roteiros de
-            diagnóstico clínicos (teleorientação em casos de sintomas
-            autolimitados), faz perguntas e usa sinais de alerta a partir dos
-            sintomas indicados. Isso permite realizar uma triagem de pacientes
-            para qualificar aqueles que precisam de atendimento médico ou
-            indicar os casos nos quais a recomendação não seja medicamentosa,
-            passando orientações para aqueles com sintomas que poderiam ficar em
-            casa. O site é totalmente gratuito e faz as primeiras perguntas que
-            um enfermeiro faria em uma triagem no hospital, com base no
-            protocolo seguido pela Organização Mundial da Saúde e pelo
-            Ministério da Saúde.
-          </p>
-        </div>
-        <div class="newsRight">
-          <img src="img/img_posts/post_06.jpg" alt="Covid-19 Virus" />
-          <h4>
-            Novo coronavírus foi fabricado acidentalmente em laboratório chinês,
-            diz descobridor do HIV
-          </h4>
-          <p>
-            O cientista francês diz que “o laboratório de alta segurança da
-            cidade de Wuhan é especializada nesse tipo de vírus, o coronavírus,
-            desde o começo dos anos 2000. Eles têm expertise com isso. Isso me
-            fez olhar de perto a sequência de RNA do vírus. Fiz essa análise,
-            assim como o matemático Jean-Claude Perez, especialista em
-            biomatemática”.
-          </p>
-        </div>
+      <!-- News -->
+      <div class="allNews">
       </div>
 
-      <!-- About Me -->
-
+      <!-- About Covid -->
       <hr />
-      <div id="aboutMe">
-        <h3>Sobre</h3>
-        <img src="img/img_posts/about.jpg" alt="" />
-        <p>
-          <i
-            >Hey, Meu Nome é George Lucas. Eu sou estudante de Ciência da
-            Computação e gosto muito da área de Desenvolvimento Web e Mobile
-            através das tecnologias React e React Native.</i
-          >
-        </p>
+      <div id="about">
+        <h2>Sobre</h2>
+        <div>
+          <img src="images/mainPhoto.jpg" alt="Coronavirus photo" />
+          <p>
+            <i>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+              Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment. However, some will become seriously ill and require medical attention.</i>
+          </p>
+        </div>
       </div>
 
-      <!-- Contact -->
+      <!-- Prevention -->
       <hr />
-      <div id="contact">
-        <h3>Contato</h3>
-        <form action="#">
-        <ul class="form-style">
-            <li>
-                <label for="Nome">Nome Completo</label>
-                <input type="text" placeholder="Nome Completo" />
-            </li>
-            <li>
-                <label for="Email">Email</label>
-                <input type="email" placeholder="Digite o seu melhor email" />
-            </li>
-            <li>
-                <label for="Mensagem">Mensagem</label>
-                <textarea placeholder="Digite a sua mensagem"></textarea>
-            </li>
-            <li>
-                <button>Enviar</button>
-            </li>
-        </form>
-        <div id="socialMedias">
-          <a href="https://www.linkedin.com/in/georgelucas-dev" target="_blank"
-            ><img src="img/icons/linkedin_icon.png" alt="Linkedin"
-          /></a>
+      <div id="preventSection">
+        <h2>Prevenção</h2>
+        <img src="images/prevent_covid19.png" alt="Prevention about Covid-19">
+        <!-- <div id="socialMedias">
+          <a href="https://www.linkedin.com/in/georgelucas-dev" target="_blank"><img src="img/icons/linkedin_icon.png"
+              alt="Linkedin" /></a>
           <a href="https://github.com/devgl96" target="_blank"><img src="img/icons/github_icon.png" alt="Github" /></a>
-        </div>
-    </ul>
-      </div>
-
-      <!-- Fonts -->
-      <div id="fontsSection">
-        <h3>Saiba Mais</h3>
-        <div id="fonts">
-          <div class="brands">
-            <a
-              href="https://forbes.com.br/last/2020/04/pacientes-com-covid-19-respondem-a-medicamento-antiviral-remdesivir-da-gilead/"
-              target="_blank"
-              ><img src="img/logos_fonts/forbes_logo.png" alt="Forbes"
-            /></a>
-          </div>
-          <div class="brands">
-            <a
-              href="https://www.saopaulo.sp.gov.br/coronavirus/"
-              target="_blank"
-              ><img" src="img/logos_fonts/governo_SP_logo.png" alt="Governo do
-              Estado de São Paulo" /></a
-            >
-          </div>
-          <div class="brands">
-            <a
-              href="https://www.ibm.com/blogs/ibm-comunica/portal-coronabr-ganha-estabilidade-com-nuvem-publica-da-ibm-para-ajudar-os-brasileiros/"
-              target="_blank"
-              ><img src="img/logos_fonts/IBM_logo.png" alt="IBM"
-            /></a>
-          </div>
-          <div class="brands">
-            <a
-              href="https://istoe.com.br/Novo-coronavIrus-foi-fabricado-em-laboratorio-chines-diz-descobridor-do-HIV"
-              target="_blank"
-              ><img src="img/logos_fonts/istoe_logo.png" alt="IstoÉ"
-            /></a>
-          </div>
-          <div class="brands">
-            <a
-              href="https://mundogeo.com/2020/04/09/cameras-termograficas-podem-apoiar-o-combate-a-covid-19/"
-              target="_blank"
-              ><img
-                src="img/logos_fonts/mundo_geo_connect_logo.png"
-                alt="Mundo Geo"
-            /></a>
-          </div>
-          <div class="brands">
-            <a
-              href="https://revistapesquisa.fapesp.br/2020/04/16/drones-no-combate-a-covid-19/"
-              target="_blank"
-            >
-              <img
-                src="img/logos_fonts/pesquisa_fapesp_logo.png"
-                alt="Pesquisa Fapesp"
-            /></a>
-          </div>
-        </div>
+        </div> -->
+        
       </div>
 
       <!-- Footer -->
@@ -268,5 +101,7 @@
         <h4>&copy; George Lucas Dev</h4>
       </div>
     </div>
-  </body>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
 </html>
